@@ -1,0 +1,8 @@
+Console.log
+
+vscode 에서 console.log 사용법을 모름
+alert만 사용
+검색 결과 console.log() 사용후 홈페이지에서 F12 창에서 확인가능
+
+------
+

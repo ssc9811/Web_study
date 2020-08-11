@@ -1,6 +1,8 @@
-function sayHello(){
-    alert("hello!");
-
+const calculator = {
+    plus: function(a , b){
+        return a + b;
+    }
 }
 
-sayHello();
+const plus = calculator.plus(5 , 5);
+console.log(plus);

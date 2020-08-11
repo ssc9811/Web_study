@@ -18,5 +18,10 @@ const name = sungcheol
 -----
 **HTML 에서 JS로 선택한 것은 객체가 됨
 -----
+document.getElementById("title") : id가 title인것을 불러옴
+document.querySelector("#title") : 위와 비슷한듯?
 
+class : .
+id : #
+-----
 

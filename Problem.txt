@@ -5,4 +5,33 @@ alert만 사용
 검색 결과 console.log() 사용후 홈페이지에서 F12 창에서 확인가능
 
 ------
+const title = document.querySelector("#title");
 
+const BASE_COLOR = "red";
+const OTHER_COLOR = "#7f8c8d";
+
+function handleClick(event){
+    const currentColor = title.style.color;
+    if (currentColor === BASE_COLOR){
+        title.style.color = OTHER_COLOR;
+    }else{
+        title.style.color = BASE_COLOR;
+    }
+}
+
+function init(){
+    title.style.color = "BASE_COLOR";
+    title.addEventListener("click", handleClick);
+}
+init();
+
+에서 BASE_COLOR , OTHER_COLOR 색이 서로 바뀌면 안됨... Why?
++ BASE_COLOR 가 대문자가 되면 RED 만 뜨고 #7f8c8d는 안됨
+예상)
+1 . BASE_COLOR가 변수가 아닌가? (X)
+-> 맞는거 같음
+2 . COLOR에 대문자가 들어가면 안되나? (X) 
+-> BASE_COLOR = red , OTHER_COLOR=BLUE 는 실행이됨
+3. BASE_COLOR가 rgb값으로 들어갔을때, OTHER_COLOR 값은 blue, #7f8c8d, rgb()가 실행됨
+결론)
+추측 : BASE_COLOR에는 RGB값이 들어가야 제대로 작동함..

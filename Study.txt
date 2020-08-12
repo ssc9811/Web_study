@@ -24,4 +24,16 @@ document.querySelector("#title") : 위와 비슷한듯?
 class : .
 id : #
 -----
+[if 조건문]
+if (){
 
+}
+else if(){
+
+}
+else{
+
+}
+JavaScript 에서는 == 보다 ===가 정확함
+https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+------

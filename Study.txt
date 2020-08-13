@@ -20,6 +20,7 @@ const name = sungcheol
 -----
 document.getElementById("title") : id가 title인것을 불러옴
 document.querySelector("#title") : 위와 비슷한듯?
+document -> HTML 을 말함.
 
 class : .
 id : #
@@ -37,3 +38,4 @@ else{
 JavaScript 에서는 == 보다 ===가 정확함
 https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
 ------
+JS는 local storage 에 있는 모든 데이터를 string으로 저장함.
